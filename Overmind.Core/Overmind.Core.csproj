@@ -39,6 +39,7 @@
   <ItemGroup>
     <Compile Include="Command.cs" />
     <Compile Include="CommandInterpreter.cs" />
+    <Compile Include="EventHandler.cs" />
     <Compile Include="Extensions\EnumerableExtensions.cs" />
     <Compile Include="Log\ILogger.cs" />
     <Compile Include="Log\LoggerFacade.cs" />

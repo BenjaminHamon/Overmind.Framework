@@ -43,6 +43,9 @@
     <Compile Include="..\Overmind.Core\CommandInterpreter.cs">
       <Link>CommandInterpreter.cs</Link>
     </Compile>
+    <Compile Include="..\Overmind.Core\EventHandler.cs">
+      <Link>EventHandler.cs</Link>
+    </Compile>
     <Compile Include="..\Overmind.Core\Extensions\EnumerableExtensions.cs">
       <Link>Extensions\EnumerableExtensions.cs</Link>
     </Compile>
