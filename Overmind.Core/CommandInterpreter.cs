@@ -4,49 +4,44 @@ using System.Linq;
 
 namespace Overmind.Core
 {
-	public abstract class CommandInterpreter
+	public class CommandInterpreter
 	{
-		private readonly IDictionary<string, Command<string[]>> commandActions;
+		private readonly IDictionary<string, Command<IList<string>>> commandCollection = new Dictionary<string, Command<IList<string>>>();
+		public IEnumerable<string> CommandNames { get { return commandCollection.Keys; } }
 
-		protected CommandInterpreter()
+		public void RegisterCommand(string name, Action<IList<string>> execute, Predicate<IList<string>> canExecute = null)
 		{
-			commandActions = new Dictionary<string, Command<string[]>>();
-
-			RegisterCommand("help", _ => Help());
-		}
-
-		protected void RegisterCommand(string commandName, Action<string[]> execute, Predicate<string[]> canExecute = null)
-		{
-			commandActions.Add(commandName, new Command<string[]>(execute, canExecute));
+			commandCollection.Add(name, new Command<IList<string>>(execute, canExecute));
 		}
 
 		public char[] Separators = { ' ' };
 
-		protected string[] SplitArguments(string arguments)
+		protected IList<string> SplitArguments(string arguments)
 		{
 			return arguments.Split(Separators, StringSplitOptions.RemoveEmptyEntries);
 		}
 
-		public void ExecuteCommand(string[] commandText)
+		public void ExecuteCommand(string commandText)
 		{
-			if (commandText.Any() == false)
-				Help();
-			else if (commandActions.ContainsKey(commandText[0]) == false)
-				throw new Exception("Unknown command: " + commandText[0]);
-			else
+			if (String.IsNullOrEmpty(commandText) == false)
 			{
-				Command<string[]> command = commandActions[commandText[0]];
-				string[] arguments = commandText.Skip(1).ToArray();
-				if (command.CanExecute(arguments) == false)
-					throw new Exception("Cannot execute command: " + commandText[0]);
-				else
-					command.Execute(arguments);
+				IList<string> arguments = SplitArguments(commandText);
+				if (arguments.Any())
+				{
+					string commandName = arguments.First();
+					if (commandCollection.ContainsKey(commandName) == false)
+						throw new Exception("[CommandInterpreter.ExecuteCommand] Unknown command: " + commandName);
+					else
+					{
+						Command<IList<string>> command = commandCollection[commandName];
+						arguments = arguments.Skip(1).ToList();
+						if (command.CanExecute(arguments) == false)
+							throw new Exception("[CommandInterpreter.ExecuteCommand] Cannot execute command: " + commandText);
+						else
+							command.Execute(arguments);
+					}
+				}
 			}
-		}
-
-		protected virtual void Help()
-		{
-			Console.WriteLine(String.Join(" ", commandActions.Keys.ToArray()));
 		}
 	}
 }
