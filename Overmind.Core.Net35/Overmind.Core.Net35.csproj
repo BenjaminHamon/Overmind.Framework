@@ -37,6 +37,9 @@
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\Overmind.Core\ApplicationSingleton.cs">
+      <Link>ApplicationSingleton.cs</Link>
+    </Compile>
     <Compile Include="..\Overmind.Core\Command.cs">
       <Link>Command.cs</Link>
     </Compile>
@@ -51,9 +54,6 @@
     </Compile>
     <Compile Include="..\Overmind.Core\Log\ILogger.cs">
       <Link>Log\ILogger.cs</Link>
-    </Compile>
-    <Compile Include="..\Overmind.Core\Log\LoggerFacade.cs">
-      <Link>Log\LoggerFacade.cs</Link>
     </Compile>
     <Compile Include="..\Overmind.Core\OvermindException.cs">
       <Link>OvermindException.cs</Link>
