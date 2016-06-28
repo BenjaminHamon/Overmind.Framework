@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Overmind.Core
+namespace Overmind.Core.Commands
 {
 	public class Command<TData>
 	{

@@ -20,6 +20,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\Overmind.Core.xml</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -30,6 +31,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.8.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Collections.Immutable, Version=1.0.34.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -38,13 +43,19 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApplicationSingleton.cs" />
-    <Compile Include="Command.cs" />
-    <Compile Include="CommandInterpreter.cs" />
+    <Compile Include="Commands\Command.cs" />
+    <Compile Include="Commands\CommandInterpreter.cs" />
     <Compile Include="EventHandler.cs" />
+    <Compile Include="Extensions\ByteExtensions.cs" />
     <Compile Include="Extensions\EnumerableExtensions.cs" />
     <Compile Include="Log\ILogger.cs" />
+    <Compile Include="Log\LogLevel.cs" />
     <Compile Include="OvermindException.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Providers\FileDataProvider.cs" />
+    <Compile Include="Providers\IDataProvider.cs" />
+    <Compile Include="Reflection\ReflectionComparer.cs" />
+    <Compile Include="Shell.cs" />
     <Compile Include="Vector.cs" />
   </ItemGroup>
   <ItemGroup>

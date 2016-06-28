@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Overmind.Core", "Overmind.Core\Overmind.Core.csproj", "{09E7341C-BD4A-487A-B6F7-3F2BF2EB2EC7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Overmind.Core.Net35", "Overmind.Core.Net35\Overmind.Core.Net35.csproj", "{C1E86357-02C7-44EF-ABD9-0E91829A1EF7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Overmind.Core.TestConsole", "Overmind.Core.TestConsole\Overmind.Core.TestConsole.csproj", "{A7742833-5036-42D9-B6D3-3760190B1C47}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{C1E86357-02C7-44EF-ABD9-0E91829A1EF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C1E86357-02C7-44EF-ABD9-0E91829A1EF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C1E86357-02C7-44EF-ABD9-0E91829A1EF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7742833-5036-42D9-B6D3-3760190B1C47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7742833-5036-42D9-B6D3-3760190B1C47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7742833-5036-42D9-B6D3-3760190B1C47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7742833-5036-42D9-B6D3-3760190B1C47}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
