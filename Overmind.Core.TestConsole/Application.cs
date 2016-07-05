@@ -15,7 +15,7 @@ namespace Overmind.Core.TestConsole
 		{
 			dataProvider = new FileDataProvider<string, string>("DataStore", "TestData");
 
-			commandInterpreter.RegisterCommand("data", arguments => Write(reflectionComparer.ToFullString(commandInterpreter.Invoke(dataProvider, arguments))));
+			commandInterpreter.RegisterExecutor("data", dataProvider, result => Write(reflectionComparer.ToFullString(result)));
 		}
 
 		private readonly ReflectionComparer reflectionComparer = new ReflectionComparer();

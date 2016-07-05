@@ -110,8 +110,13 @@ namespace Overmind.Core
 		/// <param name="arguments"></param>
 		protected virtual void Help(IList<string> arguments)
 		{
-			IEnumerable<string> commands = commandInterpreter.CommandNames.OrderBy(c => c);
-			Output.WriteLine(String.Join(" ", commands.ToArray()));
+			switch (arguments.Count)
+			{
+				case 1: Output.WriteLine(String.Join(" ", commandInterpreter.CommandNames.OrderBy(c => c).ToArray())); break;
+				case 2: Output.Write(commandInterpreter.DescribeInvoke(arguments[1])); break;
+				case 3: Output.Write(commandInterpreter.DescribeInvoke(arguments[1], arguments[2])); break;
+				default: throw new Exception("Invalid arguments");
+			}
 		}
 
 		#endregion // Commands
