@@ -1,9 +1,9 @@
 ﻿using Overmind.Core.Commands;
-using Overmind.Core.Reflection;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 
 namespace Overmind.Core
 {
@@ -44,9 +44,15 @@ namespace Overmind.Core
 				Output.Write(Prompt);
 
 				try
-				{ commandInterpreter.ExecuteCommand(Input.ReadLine()); }
+				{
+					commandInterpreter.ExecuteCommand(Input.ReadLine());
+				}
 				catch (Exception exception)
-				{ WriteError(exception); }
+				{
+					if (exception is TargetInvocationException)
+						exception = exception.InnerException;
+					WriteError(exception);
+				}
 
 				Output.Write(Separator);
 			}
@@ -55,7 +61,7 @@ namespace Overmind.Core
 		#endregion // Execution
 
 		#region Input and output
-		
+
 		public TextReader Input = System.Console.In;
 		public TextWriter Output = System.Console.Out;
 		public TextWriter ErrorOutput = System.Console.Error;
