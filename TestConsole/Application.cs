@@ -1,13 +1,13 @@
-﻿using Overmind.Core;
-using Overmind.Core.Provider;
-using Overmind.Core.Reflection;
+﻿using Overmind.Framework.Core;
+using Overmind.Framework.Core.Provider;
+using Overmind.Framework.Core.Reflection;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Overmind.Core.TestConsole
+namespace Overmind.Framework.TestConsole
 {
 	public class Application : Shell
 	{

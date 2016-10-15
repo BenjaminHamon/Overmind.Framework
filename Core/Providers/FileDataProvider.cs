@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Overmind.Core.Provider
+namespace Overmind.Framework.Core.Provider
 {
 	// TODO: Add lock to handle concurrent write (several providers on the same file).
 

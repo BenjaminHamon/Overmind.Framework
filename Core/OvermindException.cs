@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Overmind.Core
+namespace Overmind.Framework.Core
 {
 	public class OvermindException : Exception
 	{

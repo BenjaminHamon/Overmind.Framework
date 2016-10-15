@@ -1,11 +1,11 @@
-﻿using Overmind.Core.Extensions;
+﻿using Overmind.Framework.Core.Extensions;
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Collections.Immutable;
 using System.Linq;
 
-namespace Overmind.Core
+namespace Overmind.Framework.Core
 {
 	public class Vector : IReadOnlyList<double>
 	{

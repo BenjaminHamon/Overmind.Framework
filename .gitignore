@@ -10,5 +10,9 @@ TestConsole/obj/
 packages/
 
 # Visual Studio
+.vs/
 *.suo
 *.csproj.user
+
+# Visual Studio Code
+.vscode/

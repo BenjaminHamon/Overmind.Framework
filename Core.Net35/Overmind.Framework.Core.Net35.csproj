@@ -7,8 +7,8 @@
     <ProjectGuid>{C1E86357-02C7-44EF-ABD9-0E91829A1EF7}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Overmind.Core</RootNamespace>
-    <AssemblyName>Overmind.Core</AssemblyName>
+    <RootNamespace>Overmind.Framework.Core</RootNamespace>
+    <AssemblyName>Overmind.Framework.Core</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />

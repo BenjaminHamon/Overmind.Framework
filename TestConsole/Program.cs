@@ -1,4 +1,4 @@
-﻿namespace Overmind.Core.TestConsole
+﻿namespace Overmind.Framework.TestConsole
 {
 	class Program
 	{

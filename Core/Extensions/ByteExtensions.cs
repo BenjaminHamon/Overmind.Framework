@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Overmind.Core.Extensions
+namespace Overmind.Framework.Core.Extensions
 {
 	/// <summary>Extension methods for bytes.</summary>
 	public static class ByteExtensions

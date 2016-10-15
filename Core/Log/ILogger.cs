@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Overmind.Core.Log
+namespace Overmind.Framework.Core.Log
 {
 	public interface ILogger
 	{

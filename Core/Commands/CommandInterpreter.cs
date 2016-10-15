@@ -1,11 +1,11 @@
-﻿using Overmind.Core.Extensions;
+﻿using Overmind.Framework.Core.Extensions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using System.Text;
 
-namespace Overmind.Core.Commands
+namespace Overmind.Framework.Core.Commands
 {
 	/// <summary>
 	/// Parses and executes string based commands.

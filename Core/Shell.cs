@@ -1,11 +1,11 @@
-﻿using Overmind.Core.Commands;
+﻿using Overmind.Framework.Core.Commands;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Reflection;
 
-namespace Overmind.Core
+namespace Overmind.Framework.Core
 {
 	/// <summary>
 	/// Base class for a command interpreter user interface.

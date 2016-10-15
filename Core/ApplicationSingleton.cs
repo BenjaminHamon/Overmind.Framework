@@ -1,6 +1,6 @@
-﻿using Overmind.Core.Log;
+﻿using Overmind.Framework.Core.Log;
 
-namespace Overmind.Core
+namespace Overmind.Framework.Core
 {
 	/// <summary>
 	/// <para>Application level object to access common dependencies such as logging.

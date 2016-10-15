@@ -1,4 +1,4 @@
-﻿using Overmind.Core.Extensions;
+﻿using Overmind.Framework.Core.Extensions;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -6,7 +6,7 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 
-namespace Overmind.Core.Reflection
+namespace Overmind.Framework.Core.Reflection
 {
 	/// <summary>
 	/// <para>Compares objects using reflection.</para>

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Overmind.Core.Extensions
+namespace Overmind.Framework.Core.Extensions
 {
 	/// <see href="http://referencesource.microsoft.com/#System.Core/System/Linq/Enumerable.cs"/>
 	public static class LinqExtensions

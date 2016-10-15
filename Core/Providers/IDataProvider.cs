@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Overmind.Core.Provider
+namespace Overmind.Framework.Core.Provider
 {
 	/// <summary>
 	/// Abstracts interaction with a data store.

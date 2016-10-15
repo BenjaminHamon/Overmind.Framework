@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Overmind.Core")]
+[assembly: AssemblyTitle("Overmind.Framework.Core")]
 [assembly: AssemblyDescription("Core component for Overmind")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Sinheldrin")]
-[assembly: AssemblyProduct("Overmind.Core")]
+[assembly: AssemblyProduct("Overmind.Framework.Core")]
 [assembly: AssemblyCopyright("Copyright ©  2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

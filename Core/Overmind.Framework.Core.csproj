@@ -7,8 +7,8 @@
     <ProjectGuid>{09E7341C-BD4A-487A-B6F7-3F2BF2EB2EC7}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Overmind.Core</RootNamespace>
-    <AssemblyName>Overmind.Core</AssemblyName>
+    <RootNamespace>Overmind.Framework.Core</RootNamespace>
+    <AssemblyName>Overmind.Framework.Core</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -20,7 +20,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile>bin\Debug\Overmind.Core.xml</DocumentationFile>
+    <DocumentationFile>bin\Debug\Overmind.Framework.Core.xml</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Overmind.Core.Extensions
+namespace Overmind.Framework.Core.Extensions
 {
 	public static class EnumerableExtensions
 	{

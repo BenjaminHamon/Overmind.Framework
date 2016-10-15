@@ -7,8 +7,8 @@
     <ProjectGuid>{A7742833-5036-42D9-B6D3-3760190B1C47}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Overmind.Core.TestConsole</RootNamespace>
-    <AssemblyName>Overmind.Core.TestConsole</AssemblyName>
+    <RootNamespace>Overmind.Framework.TestConsole</RootNamespace>
+    <AssemblyName>Overmind.Framework.TestConsole</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -46,7 +46,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Core\Overmind.Framework.Core.csproj">
       <Project>{09E7341C-BD4A-487A-B6F7-3F2BF2EB2EC7}</Project>
-      <Name>Overmind.Core</Name>
+      <Name>Overmind.Framework.Core</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

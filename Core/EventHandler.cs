@@ -1,4 +1,4 @@
-﻿namespace Overmind.Core
+﻿namespace Overmind.Framework.Core
 {
 	// We reimplement EventHandler instead of using System.Action or System.EventHandler in order to:
 	// - have meaningful parameter names like sender instead of arg1, arg2
