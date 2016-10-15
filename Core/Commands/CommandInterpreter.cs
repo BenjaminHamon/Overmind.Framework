@@ -130,7 +130,7 @@ namespace Overmind.Framework.Core.Commands
 			foreach (MethodInfo method in methodCollection)
 			{
 				IEnumerable<string> parameterCollection = method.GetParameters()
-					.Select(parameter => parameter.ParameterType.Name + " " + parameter.Name + (parameter.IsOptional ? " = " + parameter.DefaultValue : ""));
+					.Select(parameter => parameter.ParameterType.Name + " " + parameter.Name + (parameter.IsOptional ? " = " + (parameter.DefaultValue ?? "null") : ""));
 				descriptionBuilder.AppendLine(method.Name + "(" + String.Join(", ", parameterCollection.ToArray()) + ")");
 			}
 
