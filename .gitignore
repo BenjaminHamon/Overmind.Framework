@@ -1,0 +1,11 @@
+# Build
+Core/bin/
+Core/obj/
+Core.Net35/bin/
+Core.Net35/obj/
+TestConsole/bin/
+TestConsole/obj/
+
+# Visual Studio
+*.suo
+*.csproj.user
