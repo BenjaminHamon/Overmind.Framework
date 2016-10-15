@@ -44,7 +44,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Overmind.Core\Overmind.Core.csproj">
+    <ProjectReference Include="..\Core\Overmind.Framework.Core.csproj">
       <Project>{09E7341C-BD4A-487A-B6F7-3F2BF2EB2EC7}</Project>
       <Name>Overmind.Core</Name>
     </ProjectReference>
