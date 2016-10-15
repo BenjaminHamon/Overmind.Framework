@@ -37,34 +37,34 @@
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\Overmind.Core\ApplicationSingleton.cs">
+    <Compile Include="..\Core\ApplicationSingleton.cs">
       <Link>ApplicationSingleton.cs</Link>
     </Compile>
-    <Compile Include="..\Overmind.Core\Commands\Command.cs">
+    <Compile Include="..\Core\Commands\Command.cs">
       <Link>Commands\Command.cs</Link>
     </Compile>
-    <Compile Include="..\Overmind.Core\Commands\CommandInterpreter.cs">
+    <Compile Include="..\Core\Commands\CommandInterpreter.cs">
       <Link>Commands\CommandInterpreter.cs</Link>
     </Compile>
-    <Compile Include="..\Overmind.Core\EventHandler.cs">
+    <Compile Include="..\Core\EventHandler.cs">
       <Link>EventHandler.cs</Link>
     </Compile>
-    <Compile Include="..\Overmind.Core\Extensions\ByteExtensions.cs">
+    <Compile Include="..\Core\Extensions\ByteExtensions.cs">
       <Link>Extensions\ByteExtensions.cs</Link>
     </Compile>
-    <Compile Include="..\Overmind.Core\Extensions\EnumerableExtensions.cs">
+    <Compile Include="..\Core\Extensions\EnumerableExtensions.cs">
       <Link>Extensions\EnumerableExtensions.cs</Link>
     </Compile>
-    <Compile Include="..\Overmind.Core\Log\ILogger.cs">
+    <Compile Include="..\Core\Log\ILogger.cs">
       <Link>Log\ILogger.cs</Link>
     </Compile>
-    <Compile Include="..\Overmind.Core\Log\LogLevel.cs">
+    <Compile Include="..\Core\Log\LogLevel.cs">
       <Link>Log\LogLevel.cs</Link>
     </Compile>
-    <Compile Include="..\Overmind.Core\OvermindException.cs">
+    <Compile Include="..\Core\OvermindException.cs">
       <Link>OvermindException.cs</Link>
     </Compile>
-    <Compile Include="..\Overmind.Core\Vector.cs">
+    <Compile Include="..\Core\Vector.cs">
       <Link>Vector.cs</Link>
     </Compile>
     <Compile Include="Extensions\PathExtensions.cs" />
@@ -75,11 +75,4 @@
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
-       Other similar extension points exist, see Microsoft.Common.targets.
-  <Target Name="BeforeBuild">
-  </Target>
-  <Target Name="AfterBuild">
-  </Target>
-  -->
 </Project>

@@ -6,6 +6,9 @@ Core.Net35/obj/
 TestConsole/bin/
 TestConsole/obj/
 
+# NuGet packages
+packages/
+
 # Visual Studio
 *.suo
 *.csproj.user
